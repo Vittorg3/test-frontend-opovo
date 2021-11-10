@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header.header-main {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #0079C1;
+    z-index: 2;
+}
+
+.header-main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main-content img {
+    width: 200px;
+}
+
+a.menu-option {
+    margin: 0 7px;
+    color: #fff;
+    text-decoration: none;
+    
+    font-family: "Oswald";
+}
+
+.content-page {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+section.vacancy-page {
+    width: 100%;    
+    padding-top: 90px;
+}
+
+.vacancy-page .menu-about-vacancy {
+    padding-left: 100px;
+}
+
+.vacancy-page .menu-about-vacancy a {
+    font-family: "Oswald";
+    text-decoration: none;
+    color: #314163;
+}
+
+.vacancy-page .about-vacancy {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.vacancy-page .vacancy-content-wrapper {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+.vacancy-content {
+    padding-left: 100px;
+    padding-right: 60px;
+}
+
+.vacancy-content h1 {
+    font-family: "Oswald";
+    font-size: 45px;
+    color: #314163;
+}
+
+.vacancy-content h2 {
+    font-family: "Oswald";
+    font-size: 30px;
+    margin-top: 35px;
+    color: #314163;
+}
+
+.vacancy-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 290px;
+    height: 1433px;
+    margin-right: 50px;
+    background-color: #314163;
+}
+
+.vacancy-banner img {
+    position: relative;
+    left: -40px;
+    bottom: 100px;
+    width: 390px;
+    height: 390px;
+}
+
+.vacancy-info-wrapper {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.vacancy-info-title {
+    font-family: "Oswald";
+    font-size: 22px;
+    color: #314163;
+}
+
+.vacancy-info-description {
+    font-family: "PT Serif";
+    font-size: 19px;
+    padding-top: 4px;
+    color: #314163;
+}
+
+.vacancy-form-style {
+    background-color: #F1F1F1;
+}
+
+.vacancy-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #E8F8FF;
+    padding: 15px;
+}
+
+.vacancy-form {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #314163;
+    background-color: #E8F8FF;
+
+    font-family: "Oswald";
+    color: #314163;
+}
+
+.form-control {
+    border-color: #314163 !important;
+    background-color: rgba(255, 255, 255, 0.0) !important;
+}
+
+.btn-custom {
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-top: 20px;
+    font-family: "Oswald";
+    background-color: #314163 !important;
+}
+
+input[type='file'] {
+    display: none
+}
+
+.input-wrapper {
+    display: flex;
+}
+
+.input-wrapper label {
+    background-color: #4A85AF;
+    color: #fff;
+    display: flex;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.input-wrapper label:hover {
+    background-color: #2980b9
+}
+
+
+.form-control-splite {
+    width: 45% !important;
+}
+
+.file-desc-wrapper {
+    padding: 0 20px;
+    line-height: 15px;
+}
+
+span.file-desc {
+    font-family: "Oswald";
+    font-size: 14px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    margin-top: 100px;
+    background-color: #0079C1;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+footer .footer-content img {
+    height: 100%;
+}
+
+footer .footer-text {
+    font-family: "Oswald";
+    font-size: 11px;
+    color: #fff;
+}
+
+
+header .menu-mobile {
+    display: none;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.menu-mobile-wrapper {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 49px;
+    background-color: #0079C1;
+    animation: scrollMenuMobile 0.3s forwards 1;
+}
+
+.nav-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 30px;
+}
+
+.nav-menu-mobile a.menu-option {
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.nav-menu-mobile a.menu-option:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes scrollMenuMobile {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 300px;
+    } 
+}
+
+@keyframes scrollCloseMenuMobile {
+    from {
+        height: 300px;
+    }
+
+    to {
+        height: 0;
+    } 
+}
+
+
+@media screen and (max-width: 1012px) {
+    .vacancy-banner {
+       display: none;
+    }
+
+    .content-page {
+        width: 100%;
+    }
+/**/
+    .vacancy-page .vacancy-content-wrapper {
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 815px) {
+    .menu {
+        display: none;
+    }
+
+    header .menu-mobile {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .vacancy-page .vacancy-content-wrapper {
+        display: flex;
+        width: 100%;
+    }
+    
+    .vacancy-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+
+    }
+
+    .vacancy-page .menu-about-vacancy {
+        padding-left: 20px;
+    }
+}
